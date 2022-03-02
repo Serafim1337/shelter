@@ -29,3 +29,24 @@
     background-color: $color-primary-light;
   }
 }
+
+.arrow-button {
+  position: relative;
+  padding: 23px 19px;
+  box-sizing: border-box;
+  border-radius: 100px;
+  width: 52px;
+  height: 52px;
+  border: 2px solid $color-primary;
+  background: transparent;
+
+  & img {
+    position: absolute;
+    right: 16px;
+    top: 21px;
+  }
+
+  &:hover {
+    background-color: $color-primary-light;
+  }
+}

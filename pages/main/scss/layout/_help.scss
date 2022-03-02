@@ -1,0 +1,37 @@
+.help {
+  height: 611px;
+  background-color: $color-white;
+}
+
+// .help-container {
+// }
+
+.help-content {
+  & h3 {
+    margin: 0 auto;
+    max-width: 308px;
+    padding-top: 80px;
+    text-align: center;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+  }
+}
+
+.help-cards {
+  padding-top: 60px;
+  display: flex;
+  gap: 120px;
+  row-gap: 55px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.help-card {
+  text-align: center;
+
+  & img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 30px;
+  }
+}
