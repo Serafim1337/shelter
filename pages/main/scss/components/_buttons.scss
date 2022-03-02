@@ -10,10 +10,22 @@
 
   &:hover {
     cursor: pointer;
+  }
+}
+
+.filled-button {
+  background-color: $color-primary;
+
+  &:hover {
     background-color: $color-primary-light;
   }
 }
 
-.start-button {
-  background-color: $color-primary;
+.learn-more-button {
+  background: transparent;
+  border: 2px solid $color-primary;
+
+  &:hover {
+    background-color: $color-primary-light;
+  }
 }
