@@ -1,1 +1,1 @@
-https://serafim1337.github.io/shelter/
+https://serafim1337.github.io/shelter/main.html

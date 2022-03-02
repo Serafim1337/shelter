@@ -1,3 +1,38 @@
+html,
 body {
-  background-color: $color;
+  scroll-behavior: smooth;
+  margin: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3 {
+  font-family: $ff-title;
+  font-style: $fst-default;
+  font-weight: $fw-default;
+  margin: 0;
+}
+
+h1 {
+  color: $color-primary;
+  font-size: $fs-h1;
+  line-height: 110%;
+}
+
+h2 {
+  color: $color-white;
+  font-size: $fs-title-big;
+  line-height: 130%;
+}
+
+h3 {
+  color: $color-title-gray;
+  font-size: $fs-title;
+  line-height: 130%;
+  letter-spacing: 0.06em;
 }
