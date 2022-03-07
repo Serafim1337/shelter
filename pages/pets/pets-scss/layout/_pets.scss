@@ -34,3 +34,20 @@
   display: flex;
   gap: 20px;
 }
+
+@media (max-width: 1215px) {
+  .pets {
+    height: 1733px;
+  }
+}
+
+@media (max-width: 912px) {
+  .pets-block {
+    max-height: 1365px;
+    overflow: hidden;
+  }
+
+  .pets-slider {
+    padding-top: 40px;
+  }
+}

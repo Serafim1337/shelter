@@ -139,7 +139,8 @@ h4 {
   display: flex;
   justify-content: space-between;
   flex: 1;
-  align-items: center; }
+  align-items: center;
+  padding: 0 30px; }
 
 .logo-block a {
   text-decoration: none; }
@@ -207,6 +208,16 @@ h4 {
   display: flex;
   gap: 20px; }
 
+@media (max-width: 1215px) {
+  .pets {
+    height: 1733px; } }
+@media (max-width: 912px) {
+  .pets-block {
+    max-height: 1365px;
+    overflow: hidden; }
+
+  .pets-slider {
+    padding-top: 40px; } }
 .footer {
   height: 350px;
   background: radial-gradient(110.67% 538.64% at 5.73% 50%, #513d2f 0%, #1a1a1c 100%), #211f20; }
@@ -249,5 +260,27 @@ h4 {
   .contacts a:hover,
   .address a:hover {
     color: #fddcc4; }
+
+@media (max-width: 1260px) {
+  .footer-content {
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 60px;
+    row-gap: 24px; }
+
+  .contacts {
+    max-width: 284px; }
+
+  .address {
+    max-width: 302px; }
+
+  .address {
+    padding-top: 30px; } }
+@media (max-width: 1015px) {
+  .footer {
+    height: 639px; }
+
+  .footer-content img {
+    margin: 0; } }
 
 /*# sourceMappingURL=pets.css.map */

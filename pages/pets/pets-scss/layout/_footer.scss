@@ -60,3 +60,34 @@
     color: $color-primary-light;
   }
 }
+
+@media (max-width: 1260px) {
+  .footer-content {
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 60px;
+    row-gap: 24px;
+  }
+
+  .contacts {
+    max-width: 284px;
+  }
+
+  .address {
+    max-width: 302px;
+  }
+
+  .address {
+    padding-top: 30px;
+  }
+}
+
+@media (max-width: 1015px) {
+  .footer {
+    height: 639px;
+  }
+
+  .footer-content img {
+    margin: 0;
+  }
+}
