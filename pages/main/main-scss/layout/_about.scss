@@ -38,3 +38,27 @@
     color: $color-paragraph-gray;
   }
 }
+
+@media (max-width: 920px) {
+  .about {
+    height: 1048px;
+  }
+
+  .about-container {
+    padding: 0 30px;
+  }
+
+  .about-content {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 80px;
+
+    & > * {
+      margin-top: 0;
+    }
+
+    & .text-block {
+      margin-top: 80px;
+    }
+  }
+}

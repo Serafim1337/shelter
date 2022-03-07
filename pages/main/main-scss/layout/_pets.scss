@@ -32,3 +32,21 @@
   align-items: center;
   flex: 1;
 }
+
+@media (max-width: 1280px) {
+  .pets-slider {
+    padding: 0 22px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .pets-slider {
+    gap: 12px;
+  }
+
+  .pets-cards {
+    max-width: 580px;
+    overflow: hidden;
+    gap: 40px;
+  }
+}

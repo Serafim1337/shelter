@@ -111,7 +111,8 @@ h4 {
   display: flex;
   justify-content: space-between;
   flex: 1;
-  align-items: center; }
+  align-items: center;
+  padding: 0 30px; }
 
 .logo-block a {
   text-decoration: none; }
@@ -148,6 +149,9 @@ h4 {
   left: 0;
   background-color: #f1cdb3; }
 
+@media (max-width: 768px) {
+  .header {
+    top: 30px; } }
 .start {
   max-height: 908px;
   background: radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%), #211f20; }
@@ -174,6 +178,43 @@ h4 {
     line-height: 160%;
     color: #cdcdcd; }
 
+@media (max-width: 1270px) {
+  .info-block {
+    padding-left: 30px; }
+
+  .start-container img {
+    width: 569px;
+    height: 593px; } }
+@media (max-width: 1000px) {
+  .start-container img {
+    width: 476px;
+    height: 479px; }
+
+  .info-block {
+    margin-top: 200px; } }
+@media (max-width: 768px) {
+  .start {
+    max-height: 1165px; }
+
+  .start-container img {
+    margin-top: 100px;
+    padding-left: 70px;
+    width: 569px;
+    height: 593px; }
+
+  .start-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column; }
+
+  .info-block {
+    margin-top: 150px;
+    padding-left: 0; }
+
+  .start-link {
+    display: flex;
+    text-decoration: none;
+    justify-content: center; } }
 .about {
   height: 588px;
   background-color: #ffffff; }
@@ -200,6 +241,21 @@ h4 {
     line-height: 160%;
     color: #4c4c4c; }
 
+@media (max-width: 920px) {
+  .about {
+    height: 1048px; }
+
+  .about-container {
+    padding: 0 30px; }
+
+  .about-content {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 80px; }
+    .about-content > * {
+      margin-top: 0; }
+    .about-content .text-block {
+      margin-top: 80px; } }
 .pets {
   background-color: #f6f6f6;
   height: 877px; }
@@ -224,6 +280,17 @@ h4 {
   align-items: center;
   flex: 1; }
 
+@media (max-width: 1280px) {
+  .pets-slider {
+    padding: 0 22px; } }
+@media (max-width: 1200px) {
+  .pets-slider {
+    gap: 12px; }
+
+  .pets-cards {
+    max-width: 580px;
+    overflow: hidden;
+    gap: 40px; } }
 .help {
   height: 611px;
   background-color: #ffffff; }
@@ -251,6 +318,16 @@ h4 {
     height: 60px;
     margin-bottom: 30px; }
 
+@media (max-width: 1100px) {
+  .help {
+    height: 779px; }
+
+  .help-cards {
+    gap: 85px;
+    row-gap: 55px; }
+
+  .help-card {
+    width: 166px; } }
 .donation {
   height: 464px;
   background-color: #f6f6f6; }
@@ -305,6 +382,17 @@ h4 {
   line-height: 18px;
   color: #b2b2b2; }
 
+@media (max-width: 1000px) {
+  .donation-content {
+    padding: 80px 30px 0 30px; } }
+@media (max-width: 940px) {
+  .donation {
+    height: 783px; }
+
+  .donation-content {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 60px; } }
 .footer {
   height: 350px;
   background: radial-gradient(110.67% 538.64% at 5.73% 50%, #513d2f 0%, #1a1a1c 100%), #211f20; }
@@ -319,33 +407,55 @@ h4 {
   .footer-content > img {
     margin-top: 40px; }
 
-.contacts,
 .address {
-  padding-top: 55px; }
-  .contacts ul,
-  .address ul {
-    padding: 0;
-    list-style: none; }
-    .contacts ul li,
-    .address ul li {
-      display: flex; }
-  .contacts img,
-  .address img {
-    margin-right: 20px; }
-  .contacts p,
-  .address p {
-    max-width: 302px;
-    font-family: Georgia, "Times New Roman", Times, serif;
-    font-size: 20px;
-    line-height: 115%;
-    letter-spacing: 0.06em;
-    color: #f1cdb3; }
-  .contacts a,
-  .address a {
-    text-decoration: none;
-    transition: 0.5s ease; }
-  .contacts a:hover,
-  .address a:hover {
-    color: #fddcc4; }
+  padding-top: 50px; }
+
+.contacts ul,
+.address ul {
+  padding: 0;
+  list-style: none; }
+  .contacts ul li,
+  .address ul li {
+    display: flex; }
+.contacts img,
+.address img {
+  margin-right: 20px; }
+.contacts p,
+.address p {
+  max-width: 302px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  color: #f1cdb3; }
+.contacts a,
+.address a {
+  text-decoration: none;
+  transition: 0.5s ease; }
+.contacts a:hover,
+.address a:hover {
+  color: #fddcc4; }
+
+@media (max-width: 1260px) {
+  .footer-content {
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 60px;
+    row-gap: 26px; }
+
+  .contacts {
+    max-width: 284px; }
+
+  .address {
+    max-width: 302px; }
+
+  .address {
+    padding-top: 30px; } }
+@media (max-width: 1015px) {
+  .footer {
+    height: 639px; }
+
+  .footer-content img {
+    margin: 0; } }
 
 /*# sourceMappingURL=main.css.map */
