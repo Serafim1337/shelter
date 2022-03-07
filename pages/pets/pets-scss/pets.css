@@ -19,7 +19,10 @@ h4 {
 h1 {
   color: #545454;
   font-size: 32px;
-  line-height: 110%; }
+  line-height: 110%;
+  transition: 0.5s ease; }
+  h1:hover {
+    color: #292929; }
 
 h2 {
   color: #ffffff;
@@ -61,7 +64,7 @@ h4 {
   .learn-more-button:hover {
     background-color: #fddcc4; }
 
-.arrow-button {
+.round-button {
   position: relative;
   padding: 23px 19px;
   box-sizing: border-box;
@@ -70,12 +73,40 @@ h4 {
   height: 52px;
   border: 2px solid #f1cdb3;
   background: transparent; }
-  .arrow-button img {
+  .round-button img {
     position: absolute;
     right: 16px;
     top: 21px; }
-  .arrow-button:hover {
+  .round-button span {
+    position: absolute;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 20px;
+    line-height: 115%;
+    color: #292929;
+    letter-spacing: 0.06em; }
+  .round-button #button1 {
+    right: 13px;
+    top: 19px; }
+  .round-button #button2 {
+    right: 19px;
+    top: 19px; }
+  .round-button #button3 {
+    right: 18px;
+    top: 12px; }
+  .round-button #button4 {
+    right: 19px;
+    top: 19px; }
+  .round-button #button5 {
+    right: 10px;
+    top: 19px; }
+  .round-button:hover {
     background-color: #fddcc4; }
+
+.button-gray {
+  border-color: #cdcdcd; }
+  .button-gray:hover {
+    cursor: default;
+    background-color: transparent; }
 
 .pets-cards {
   display: flex;
@@ -91,12 +122,14 @@ h4 {
     padding: 30px 0; }
   .pet-card .button {
     margin-bottom: 30px; }
+  .pet-card:hover {
+    cursor: pointer; }
 
 .header {
   max-height: 60px;
   position: absolute;
   width: 100%;
-  top: 60px;
+  top: 30px;
   left: 50%;
   transform: translate(-50%); }
 
@@ -145,28 +178,32 @@ h4 {
   background-color: #f1cdb3; }
 
 .pets {
-  background-color: #f6f6f6;
-  height: 877px; }
+  margin-top: 120px;
+  height: 1342px;
+  background-color: #f6f6f6; }
 
-.pets-container h3 {
-  margin: 0 auto;
+.pets-content {
   padding-top: 80px;
-  max-width: 400px;
-  line-height: 130%;
-  letter-spacing: 0.06em;
-  text-align: center; }
+  display: flex;
+  flex-direction: column; }
+  .pets-content h3 {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center; }
 
 .pets-block {
-  padding-top: 60px;
-  text-align: center; }
-  .pets-block .filled-button {
-    margin-top: 60px; }
+  padding-top: 45px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 270px);
+  grid-column-gap: 40px;
+  grid-row-gap: 30px;
+  justify-content: center; }
 
 .pets-slider {
+  padding-top: 45px;
+  margin: 0 auto;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex: 1; }
+  gap: 20px; }
 
 .footer {
   height: 350px;
@@ -203,5 +240,12 @@ h4 {
     line-height: 115%;
     letter-spacing: 0.06em;
     color: #f1cdb3; }
+  .contacts a,
+  .address a {
+    text-decoration: none;
+    transition: 0.5s ease; }
+  .contacts a:hover,
+  .address a:hover {
+    color: #fddcc4; }
 
 /*# sourceMappingURL=pets.css.map */

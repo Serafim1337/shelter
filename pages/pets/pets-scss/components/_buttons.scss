@@ -30,7 +30,7 @@
   }
 }
 
-.arrow-button {
+.round-button {
   position: relative;
   padding: 23px 19px;
   box-sizing: border-box;
@@ -46,7 +46,50 @@
     top: 21px;
   }
 
+  & span {
+    position: absolute;
+    font-family: $ff-title;
+    font-size: $fs-button-number;
+    line-height: 115%;
+    color: $color-dark;
+    letter-spacing: 0.06em;
+  }
+
+  & #button1 {
+    right: 13px;
+    top: 19px;
+  }
+
+  & #button2 {
+    right: 19px;
+    top: 19px;
+  }
+
+  & #button3 {
+    right: 18px;
+    top: 12px;
+  }
+
+  & #button4 {
+    right: 19px;
+    top: 19px;
+  }
+
+  & #button5 {
+    right: 10px;
+    top: 19px;
+  }
+
   &:hover {
     background-color: $color-primary-light;
+  }
+}
+
+.button-gray {
+  border-color: $color-text-gray;
+
+  &:hover {
+    cursor: default;
+    background-color: transparent;
   }
 }

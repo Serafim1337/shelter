@@ -23,6 +23,11 @@ h1 {
   color: $color-title-gray;
   font-size: $fs-h1;
   line-height: 110%;
+  transition: $transition-default;
+
+  &:hover {
+    color: $color-dark;
+  }
 }
 
 h2 {
