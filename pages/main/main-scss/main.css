@@ -3,6 +3,9 @@ body {
   scroll-behavior: smooth;
   margin: 0; }
 
+.lock {
+  overflow: hidden; }
+
 .container {
   max-width: 1200px;
   margin: 0 auto; }
@@ -140,6 +143,9 @@ h4 {
   .nav-link:hover {
     color: #ffffff; }
 
+.underline {
+  color: #ffffff; }
+
 .underline::after {
   position: absolute;
   content: "";
@@ -150,10 +156,9 @@ h4 {
   background-color: #f1cdb3; }
 
 .burger-menu {
-  display: none; }
-
-.burger-menu {
+  display: none;
   background: transparent;
+  z-index: 100;
   position: relative;
   height: 22px;
   width: 30px; }
@@ -182,6 +187,51 @@ h4 {
 .cross:after {
   top: 50%;
   transform: rotate(315deg); }
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: -30px;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(41, 41, 41, 0.5);
+  animation: animeDropdown 0.3s ease; }
+
+.active-dropdown {
+  display: block; }
+
+@keyframes animeDropdown {
+  0% {
+    opacity: 0%; }
+  100% {
+    opacity: 100%; } }
+.menu-block {
+  width: 320px;
+  height: 100vh;
+  float: right;
+  background-color: #292929;
+  position: relative;
+  animation: animeMenuBlock 0.5s ease;
+  display: none; }
+
+.active-menu-block {
+  display: block; }
+
+@keyframes animeMenuBlock {
+  0% {
+    right: -1000px; }
+  100% {
+    right: 0; } }
+.nav-dropdown {
+  list-style: none;
+  margin-top: 248px;
+  padding-left: 15px; }
+  .nav-dropdown li {
+    margin-top: 40px;
+    text-align: center; }
+  .nav-dropdown .nav-link {
+    font-size: 32px; }
 
 @media (max-width: 768px) {
   .header {
@@ -241,9 +291,8 @@ h4 {
 
   .start-container img {
     margin-top: 100px;
-    padding-left: 70px;
-    width: 569px;
-    height: 593px; }
+    width: 470px;
+    height: 517px; }
 
   .start-content {
     display: flex;
@@ -260,7 +309,7 @@ h4 {
     justify-content: center; } }
 @media (max-width: 500px) {
   .start {
-    max-height: 823px; }
+    max-height: 1165px; }
 
   .info-block h2 {
     margin: 0 auto;
@@ -273,7 +322,7 @@ h4 {
     text-align: center; }
 
   .start-container img {
-    margin-top: 90px;
+    margin-top: 105px;
     padding-left: 40px;
     width: 260px;
     height: 272px; } }
