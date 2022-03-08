@@ -180,6 +180,52 @@ h4 {
   left: 0;
   background-color: #f1cdb3; }
 
+.burger-menu {
+  display: none; }
+
+.burger-menu {
+  background: transparent;
+  position: relative;
+  height: 22px;
+  width: 30px; }
+  .burger-menu:before, .burger-menu:after {
+    background: #292929;
+    backface-visibility: hidden;
+    content: "";
+    height: 2px;
+    left: 0;
+    transition: 0.75s;
+    width: 30px; }
+  .burger-menu:before {
+    box-shadow: #292929 0 10px 0 0;
+    position: absolute;
+    top: 0; }
+  .burger-menu:after {
+    position: absolute;
+    top: calc(100% - 2px); }
+  .burger-menu:hover {
+    cursor: pointer; }
+
+.cross:before {
+  box-shadow: transparent 0 0 0 0;
+  top: 50%;
+  transform: rotate(225deg); }
+.cross:after {
+  top: 50%;
+  transform: rotate(315deg); }
+
+@media (max-width: 768px) {
+  .header {
+    top: 30px; } }
+@media (max-width: 740px) {
+  .nav-list {
+    display: none; }
+
+  .header-container {
+    padding: 0 43px 0 10px; }
+
+  .burger-menu {
+    display: block; } }
 .pets {
   margin-top: 120px;
   height: 1342px;
@@ -218,6 +264,21 @@ h4 {
 
   .pets-slider {
     padding-top: 40px; } }
+@media (max-width: 380px) {
+  .pets {
+    height: 1649px; }
+
+  .pets-content {
+    padding-top: 42px; }
+    .pets-content h3 {
+      max-width: 300px;
+      font-size: 25px; }
+
+  .pets-block {
+    padding-top: 42px; }
+
+  .pets-slider {
+    gap: 10px; } }
 .footer {
   height: 350px;
   background: radial-gradient(110.67% 538.64% at 5.73% 50%, #513d2f 0%, #1a1a1c 100%), #211f20; }
@@ -281,6 +342,30 @@ h4 {
     height: 639px; }
 
   .footer-content img {
-    margin: 0; } }
+    margin: 0; }
+
+  .contacts img,
+  .address img {
+    margin-right: 20px; } }
+@media (max-width: 663px) {
+  .footer {
+    height: 809px; }
+
+  .footer-content {
+    flex-direction: column;
+    padding-top: 30px;
+    row-gap: 20px; }
+    .footer-content h3 {
+      margin: 0 auto;
+      max-width: 278px;
+      text-align: center;
+      font-size: 25px; }
+    .footer-content > img {
+      width: 260px;
+      height: 269px; }
+
+  .contacts,
+  .address {
+    padding: 0; } }
 
 /*# sourceMappingURL=pets.css.map */
