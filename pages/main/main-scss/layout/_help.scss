@@ -50,3 +50,39 @@
     width: 166px;
   }
 }
+
+@media (max-width: 715px) {
+  .help-content {
+    & h3 {
+      max-width: 230px;
+      padding-top: 42px;
+      font-size: 25px;
+      text-align: center;
+    }
+  }
+
+  .help-cards {
+    padding-top: 42px;
+    gap: 30px;
+  }
+
+  .help-card {
+    width: 130px;
+  }
+}
+
+@media (max-width: 467px) {
+  .help {
+    height: 885px;
+  }
+
+  .help-card:last-of-type {
+    justify-self: flex-start;
+  }
+
+  .help-card {
+    & h4 {
+      font-size: 15px;
+    }
+  }
+}

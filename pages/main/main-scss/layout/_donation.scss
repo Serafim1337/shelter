@@ -89,3 +89,54 @@
     gap: 60px;
   }
 }
+
+@media (max-width: 580px) {
+  .donation {
+    height: 542px;
+  }
+
+  .donation-content {
+    padding: 42px 10px 0 10px;
+    gap: 32px;
+
+    & img {
+      width: 260px;
+      height: 135px;
+      margin: 0;
+    }
+  }
+
+  .donation-info-block {
+    text-align: center;
+
+    & h3 {
+      margin: 0 auto 20px auto;
+      max-width: 220px;
+      font-size: 25px;
+      text-align: center;
+    }
+
+    .credit-card {
+      margin: 20px auto 20px auto;
+      max-width: 281px;
+      height: 43px;
+      justify-content: space-around;
+    }
+
+    .card-number {
+      font-size: 15px;
+    }
+
+    & p:first-of-type {
+      text-align: center;
+    }
+
+    & p:last-of-type {
+      text-align: justify;
+    }
+
+    & span {
+      letter-spacing: normal;
+    }
+  }
+}

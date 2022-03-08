@@ -62,3 +62,39 @@
     }
   }
 }
+
+@media (max-width: 500px) {
+  .about {
+    height: 974px;
+  }
+
+  .about-container {
+    padding: 0 25px;
+  }
+
+  .text-block {
+    & h3 {
+      max-width: 280px;
+      margin: 0 auto;
+      font-size: 25px;
+      text-align: center;
+    }
+    & p {
+      margin-top: 25px;
+    }
+  }
+
+  .about-content {
+    gap: 0px;
+
+    & .text-block {
+      margin-top: 42px;
+      text-align: justify;
+    }
+
+    & img {
+      width: 260px;
+      height: 354px;
+    }
+  }
+}

@@ -92,4 +92,35 @@
   .footer-content img {
     margin: 0;
   }
+
+  .contacts,
+  .address {
+    & img {
+      margin-right: 20px;
+    }
+  }
+}
+
+@media (max-width: 663px) {
+  .footer {
+    height: 809px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    padding-top: 30px;
+    row-gap: 5px;
+
+    & h3 {
+      margin: 0 auto;
+      max-width: 278px;
+      text-align: center;
+      font-size: 25px;
+    }
+
+    & > img {
+      width: 260px;
+      height: 269px;
+    }
+  }
 }

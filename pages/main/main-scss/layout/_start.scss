@@ -92,3 +92,33 @@
     justify-content: center;
   }
 }
+
+@media (max-width: 500px) {
+  .start {
+    max-height: 823px;
+  }
+
+  .info-block {
+    & h2 {
+      margin: 0 auto;
+      max-width: 220px;
+      font-size: 25px;
+      text-align: center;
+    }
+
+    & p {
+      padding-top: 42px;
+      max-width: 300px;
+      text-align: center;
+    }
+  }
+
+  .start-container {
+    & img {
+      margin-top: 90px;
+      padding-left: 40px;
+      width: 260px;
+      height: 272px;
+    }
+  }
+}
